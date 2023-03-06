@@ -146,7 +146,11 @@
         <div class="cta__values">
           <!-- CTA VALUE 1 -->
           <div class="cta__value">
-            <img src="/assets/images/Icons/handshake.png" />
+            <img
+              src="/assets/images/Icons/handshake.png"
+              onmouseover="onValueMouseOver(1)"
+              id="value1-img"
+            />
 
             <p class="cta__value__title">Less work for you</p>
             <p>
@@ -157,7 +161,11 @@
 
           <!-- CTA VALUE 2 -->
           <div class="cta__value">
-            <img src="/assets/images/Icons/flexible-screen.png" />
+            <img
+              src="/assets/images/Icons/flexible-screen.png"
+              onmouseover="onValueMouseOver(2)"
+              id="value2-img"
+            />
 
             <p class="cta__value__title">Super flexible</p>
             <p>
@@ -168,7 +176,11 @@
 
           <!-- CTA VALUE 3 -->
           <div class="cta__value">
-            <img src="/assets/images/Icons/save-money.png" />
+            <img
+              src="/assets/images/Icons/save-money.png"
+              onmouseover="onValueMouseOver(3)"
+              id="value3-img"
+            />
 
             <p class="cta__value__title">Everyone saves</p>
             <p>
@@ -178,9 +190,58 @@
           </div>
         </div>
 
-        <button class="schedule-demo-btn">Schedule a demo</button>
+        <button class="schedule-demo-btn" onclick="openDemoModal()">
+          Schedule a demo
+        </button>
       </div>
     </main>
+
+    <div class="modal" tabindex="-1" role="dialog" id="demo-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form class="hero__form">
+              <div class="hero__form__flex-container">
+                <p>Let's get started</p>
+
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Your phone number"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Work email address"
+                  required
+                />
+
+                <button class="schedule-demo-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+              onclick="closeDemoModal()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
