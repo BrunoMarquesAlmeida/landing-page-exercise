@@ -93,7 +93,7 @@ ul {
 
 .hero__p2 {
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hero__h1,
@@ -164,4 +164,32 @@ ul {
   margin-top: -1px;
   background-color: white;
   position: relative;
+}
+
+.cta {
+  color: #072869;
+  text-align: center;
+}
+
+.cta__p1 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.cta img {
+  max-height: 40px;
+  margin-bottom: 20px;
+}
+
+.cta__values {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta__value {
+  max-width: 30%;
+}
+
+.cta__value__title {
+  font-weight: 600;
 }
