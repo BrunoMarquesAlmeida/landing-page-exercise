@@ -1,0 +1,154 @@
+ul {
+  list-style-type: none;
+}
+
+.header {
+  padding-bottom: 40px;
+}
+
+.header,
+.hero {
+  background-color: #244384;
+}
+
+.header__container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.header p {
+  margin-bottom: 0;
+}
+
+.header__nav img {
+  max-height: 15px;
+  margin-right: 8px;
+}
+
+.header__nav ul,
+.header__nav li,
+.header__nav a,
+.header__nav__item {
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.header__nav__item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.hero__flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero {
+  color: white;
+  position: relative;
+}
+
+.hero__container {
+  z-index: 1;
+  position: relative;
+}
+
+.hero__wave {
+  position: relative;
+  margin-top: -200px;
+}
+
+.hero__text-block {
+  display: inline-block;
+}
+
+.hero__p1 {
+  font-weight: 600;
+}
+
+.hero__p2 {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero__h1,
+.hero__p1,
+.hero__p2 {
+  padding-bottom: 20px;
+  display: inline-block;
+}
+
+.hero__form {
+  display: inline-block;
+  max-width: 300px;
+  background-color: white;
+  border-top: 3px solid #6ce0e1;
+  border-radius: 0 0 2px 2px;
+  padding: 25px;
+  box-shadow: -10px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero__form p {
+  color: #0f1b35;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hero__form input {
+  margin-bottom: 15px;
+  padding: 8px;
+  font-weight: 600;
+  color: #757575;
+  border: 1px solid #cecece;
+}
+
+.hero__form button {
+  border-radius: 40px;
+  padding: 10px;
+  border: 3px solid #6266e4;
+}
+
+.hero__form__flex-container {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+}
+
+.hero__form__names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__form__names input {
+  width: 48%;
+}
+
+.hero__form__submit {
+  background-color: #6266e4;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hero__form__contact {
+  background-color: white;
+  color: #6266e4;
+}
+
+.cta {
+  margin-top: -1px;
+  background-color: white;
+  position: relative;
+}
