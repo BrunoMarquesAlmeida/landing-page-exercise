@@ -4,10 +4,6 @@ ul {
 
 .header {
   padding-bottom: 40px;
-}
-
-.header,
-.hero {
   background-color: #244384;
 }
 
@@ -58,6 +54,23 @@ ul {
 .hero {
   color: white;
   position: relative;
+  background: rgb(36, 67, 132);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(36, 67, 132, 1) 0%,
+    rgba(4, 37, 106, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(36, 67, 132, 1) 0%,
+    rgba(4, 37, 106, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(36, 67, 132, 1) 0%,
+    rgba(4, 37, 106, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#244384",endColorstr="#04256a",GradientType=1);
 }
 
 .hero__container {
