@@ -2,6 +2,12 @@ ul {
   list-style-type: none;
 }
 
+body button {
+  border-radius: 40px;
+  padding: 10px 40px;
+  border: 3px solid #6266e4;
+}
+
 .header {
   padding-bottom: 40px;
   background-color: #244384;
@@ -127,12 +133,6 @@ ul {
   border: 1px solid #cecece;
 }
 
-.hero__form button {
-  border-radius: 40px;
-  padding: 10px;
-  border: 3px solid #6266e4;
-}
-
 .hero__form__flex-container {
   display: flex;
   flex-flow: column;
@@ -148,7 +148,7 @@ ul {
   width: 48%;
 }
 
-.hero__form__submit {
+.schedule-demo-btn {
   background-color: #6266e4;
   color: white;
   font-weight: 600;
@@ -184,6 +184,7 @@ ul {
 .cta__values {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .cta__value {
