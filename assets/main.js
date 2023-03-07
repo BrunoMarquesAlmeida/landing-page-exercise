@@ -29,14 +29,24 @@ function onValueMouseOver(valueNumber) {
   document.getElementById(hoveredValue).src = `/assets/images/Icons/${newIcon}`;
 }
 
-const demoForm = document.getElementById("demo-modal");
+const demoModal = document.getElementById("demo-modal");
+const welcomeModal = document.getElementById("welcome-modal");
 
 function openDemoModal() {
   setTimeout(() => {
-    demoForm.style.display = "block";
+    demoModal.style.display = "block";
   }, 3000);
 }
 
-function closeDemoModal() {
-  demoForm.style.display = "none";
+function closeModals() {
+  demoModal.style.display = "none";
+  welcomeModal.style.display = "none";
+}
+
+function onPageLoad() {
+  welcomeModal.style.display = "block";
+
+  setTimeout(() => {
+    welcomeModal.style.display = "none";
+  }, 5000);
 }

@@ -13,6 +13,10 @@ body button {
   background-color: #244384;
 }
 
+.header--green {
+  background-color: #2b9965;
+}
+
 .header__container {
   display: flex;
   flex-flow: row;
@@ -88,6 +92,26 @@ body button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#244384",endColorstr="#04256a",GradientType=1);
 }
 
+.hero--green {
+  background: rgb(43, 153, 101);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(43, 153, 101, 1) 0%,
+    rgba(4, 106, 53, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(43, 153, 101, 1) 0%,
+    rgba(4, 106, 53, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(43, 153, 101, 1) 0%,
+    rgba(4, 106, 53, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b9965",endColorstr="#046a35",GradientType=1);
+}
+
 .hero__container {
   z-index: 1;
   position: relative;
@@ -96,6 +120,11 @@ body button {
 .hero__wave {
   position: relative;
   margin-top: -200px;
+  overflow: hidden;
+}
+
+.hero__wave img {
+  width: 101vw;
 }
 
 .hero__text-block {
